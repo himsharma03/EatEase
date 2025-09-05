@@ -1,0 +1,21 @@
+{
+  "name": "eatease-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm start --prefix eatease-backend\" \"npm --prefix eatease-frontend run dev\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "connect-session-sequelize": "^8.0.2",
+    "express-session": "^1.18.2",
+    "qrcode.react": "^4.2.0",
+    "react-qr-reader": "^3.0.0-beta-1"
+  }
+}

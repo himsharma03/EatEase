@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: eatease-backend
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DB_HOST
+        value: your-db-host
+      - key: DB_USER
+        value: your-db-user
+      - key: DB_PASS
+        value: your-db-password
+      - key: DB_NAME
+        value: eatease
+      - key: DB_DIALECT
+        value: mysql # or postgres
+      - key: JWT_SECRET
+        value: supersecretkey
+      - key: PORT
+        value: 10000
